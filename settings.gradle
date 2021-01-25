@@ -1,0 +1,4 @@
+rootProject.name = "BackgroundRemoverSample"
+include ':app'
+include ':mylibrary'
+include ':easyphotopicker'

@@ -1,0 +1,63 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AllActionActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <include layout="@layout/content_main2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="11dp"
+        android:background="#131418"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/setBorderCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Border"
+            android:textSize="12sp"
+            android:textColor="#00AFF0"
+            tools:ignore="HardcodedText" />
+        <CheckBox
+            android:id="@+id/setCropCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Crop"
+            android:textSize="12sp"
+            android:textColor="#00AFF0"
+            tools:ignore="HardcodedText" />
+        <CheckBox
+            android:id="@+id/setIntroCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Intro"
+            android:textSize="12sp"
+            android:textColor="#00AFF0"
+            tools:ignore="HardcodedText" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/pickImage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/add_circle_1"
+            android:textSize="12sp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+</LinearLayout>
